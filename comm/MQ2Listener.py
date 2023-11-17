@@ -1,7 +1,7 @@
 import paho.mqtt.client as mqttc
 
-MQ2_STATUS_TOPIC = 'UdeA/SmartGas/MQ2'
-MQ2_BROKER_URL = 'test.mosquitto.org'
+MQ2_STATUS_TOPIC = 'UdeA/SmartGas/MQ2/smargas_esp32_001'
+MQ2_BROKER_URL = '192.168.204.206'
 MQ2_BROKER_PORT = 1883
 
 

@@ -1,9 +1,7 @@
 from kivy.app import App
 from kivy.uix.screenmanager import ScreenManager
 
-from screen.BuzzerScreen import BuzzerScreen
-from screen.MQ2Screen import MQ2Screen
-from screen.ServoScreen import ServoScreen
+from screen.SmartGasScreen import SmartGasScreen
 
 
 class SmartGas(App):
@@ -11,18 +9,8 @@ class SmartGas(App):
 
     def build(self):
         self.screenManager.add_widget(
-            MQ2Screen(
-                name='MQ2'
-            )
-        )
-        self.screenManager.add_widget(
-            ServoScreen(
-                name='Servo'
-            )
-        )
-        self.screenManager.add_widget(
-            BuzzerScreen(
-                name='Buzzer'
+            SmartGasScreen(
+                name='SmartGas'
             )
         )
         return self.screenManager

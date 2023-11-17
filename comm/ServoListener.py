@@ -1,7 +1,7 @@
 import paho.mqtt.client as mqttc
 
-SERVO_STATUS_TOPIC = 'UdeA/SmartGas/ServoStatus'
-SERVO_BROKER_URL = 'test.mosquitto.org'
+SERVO_STATUS_TOPIC = 'UdeA/SmartGas/Servo/smargas_esp32_002/Status'
+SERVO_BROKER_URL = '192.168.204.206'
 SERVO_BROKER_PORT = 1883
 
 

@@ -1,0 +1,33 @@
+<SmartGasScreen>:
+    GridLayout:
+        cols: 2
+        cols_minimum: {0: 300, 1: 100}
+        canvas.before:
+            Color:
+                rgba: 0.9, 0.9, 0.9, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        Label:
+            text: root.gasValue
+            font_size: '50sp'
+            bold: True
+            color: 1, 1, 1, 1
+            canvas.before:
+                Color:
+                    rgba: root.gasValueBackgroundColor
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+        BoxLayout:
+            orientation: 'vertical'
+            Image:
+                source: root.imageServoStatus
+            Image:
+                source: root.imageBuzzerStatus
+            Button:
+                text: 'APAGAR ALARMA'
+                disabled: root.isBuzzerDisabled
+                font_size: '20sp'
+                bold: True
+                background_color: 0, 0.1, 1, 1

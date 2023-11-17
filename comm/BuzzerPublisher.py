@@ -1,7 +1,7 @@
 from paho.mqtt import publish
 
-BUZZER_TOPIC = 'UdeA/SmartGas/Buzzer'
-BUZZER_BROKER_URL = 'test.mosquitto.org'
+BUZZER_TOPIC = 'UdeA/SmartGas/Buzzer/smargas_esp32_001'
+BUZZER_BROKER_URL = '192.168.204.206'
 BUZZER_BROKER_PORT = 1883
 
 

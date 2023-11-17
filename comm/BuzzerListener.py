@@ -1,7 +1,7 @@
 import paho.mqtt.client as mqttc
 
-BUZZER_STATUS_TOPIC = 'UdeA/SmartGas/BuzzerStatus'
-BUZZER_BROKER_URL = 'test.mosquitto.org'
+BUZZER_STATUS_TOPIC = 'UdeA/SmartGas/Buzzer/smargas_esp32_001/Status'
+BUZZER_BROKER_URL = '192.168.204.206'
 BUZZER_BROKER_PORT = 1883
 
 
